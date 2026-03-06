@@ -161,7 +161,6 @@ This hybrid approach ensures the scoring is **auditable and consistent** (same w
 
 ### Assumptions
 
-- **Document format:** Claim forms and invoices are text-extractable (not scanned images requiring OCR). The pipeline expects content passed as text in messages. In production, an OCR preprocessing step would handle scanned documents.
 - **Reference data is static:** Member records, provider databases, tariff schedules, and claims history are stored as JSON files in `src/database/`. In production, these would connect to a live database with real-time updates.
 - **Document grouping by member ID:** The pipeline matches claim forms to invoices primarily by member ID, assuming each member submits one claim form and one invoice per encounter.
 - **Single LLM provider:** The system assumes access to OpenAI's API. The model is configured in a single file (`src/pipeline/config/llm.py`) and can be swapped to any LangChain-supported model.
@@ -181,7 +180,6 @@ This hybrid approach ensures the scoring is **auditable and consistent** (same w
 
 ### Production Readiness
 - **Real database integration** — Replace JSON files with PostgreSQL/MongoDB for member records, provider data, tariffs, and claims history
-- **OCR preprocessing** — Add document scanning support (Tesseract, AWS Textract, or Google Document AI) for image-based claim forms
 - **Authentication & authorization** — Role-based access for claims adjusters, supervisors, and auditors
 - **Batch processing API** — Endpoint for bulk claim ingestion via CSV/JSON alongside the interactive UI
 

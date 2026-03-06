@@ -175,6 +175,10 @@ langgraph dev
 ```
 
 The LangGraph Studio UI opens automatically. The API is available at the URL shown in the terminal.
+- 🚀 API: http://127.0.0.1:2024
+- 🎨 Studio UI: https://smith.langchain.com/studio/?baseUrl=http://127.0.0.1:2024
+- 📚 API Docs: http://127.0.0.1:2024/docs
+
 
 ### Docker
 
@@ -184,7 +188,9 @@ From the monorepo root:
 docker compose up --build
 ```
 
-The API is available at http://localhost:8120.
+- 🚀 API: http://localhost:8120
+- 🎨 Studio UI: https://smith.langchain.com/studio/?baseUrl=http://localhost:8120
+- 📚 API Docs: http://localhost:8120/docs
 
 ### Invoking the Pipeline
 

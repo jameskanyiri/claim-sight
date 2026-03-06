@@ -119,8 +119,6 @@ export function AgentProvider({ children }: { children: React.ReactNode }) {
     reconnectOnMount: () => window.sessionStorage,
   })
 
-  console.log("stream claims", stream.values.claims)
-
 
   const claims = (stream.values as unknown as AgentState | undefined)?.claims ?? []
   const activeNode = inferActiveNode(claims, stream.isLoading)
