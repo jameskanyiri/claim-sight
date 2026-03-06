@@ -1,0 +1,21 @@
+[
+    {"procedure_code": "D2140", "description": "Fillings Minor",               "approved_tariff": 3500,   "category": "dental"},
+    {"procedure_code": "D2160", "description": "Fillings Major",               "approved_tariff": 10000,  "category": "dental"},
+    {"procedure_code": "D0220", "description": "Intra-Oral Xray",              "approved_tariff": 800,    "category": "dental"},
+
+    {"procedure_code": "76641", "description": "Ultrasound Breast",            "approved_tariff": 2500,   "category": "radiology"},
+    {"procedure_code": "99213", "description": "Consultation",                 "approved_tariff": 1500,   "category": "outpatient"},
+
+    {"procedure_code": "99214", "description": "Corporate Consultation",       "approved_tariff": 1500,   "category": "outpatient"},
+    {"procedure_code": "87338", "description": "H Pylori Stool",               "approved_tariff": 2800,   "category": "laboratory"},
+    {"procedure_code": "87177", "description": "Stool for Ova & Cysts",        "approved_tariff": 700,    "category": "laboratory"},
+    {"procedure_code": "85025", "description": "Haemogram - CBC",              "approved_tariff": 1200,   "category": "laboratory"},
+    {"procedure_code": "RX001", "description": "Gaviscon Syrup 200ml",         "approved_tariff": 950,    "category": "pharmacy"},
+    {"procedure_code": "RX002", "description": "E-Some 40mg caps",             "approved_tariff": 750,    "category": "pharmacy"},
+
+    {"procedure_code": "99283", "description": "Emergency Visit - Moderate",   "approved_tariff": 5000,   "category": "emergency"},
+    {"procedure_code": "59510", "description": "Caesarean Section",            "approved_tariff": 65000,  "category": "maternity"},
+    {"procedure_code": "59400", "description": "Vaginal Delivery",             "approved_tariff": 35000,  "category": "maternity"},
+    {"procedure_code": "45378", "description": "Colonoscopy",                  "approved_tariff": 30000,  "category": "gastro"},
+    {"procedure_code": "43239", "description": "Upper GI Endoscopy",           "approved_tariff": 25000,  "category": "gastro"}
+]

@@ -1,0 +1,62 @@
+[
+    {
+        "provider_id": "PRV001",
+        "provider_name": "Nairobi Lifecare Hospital",
+        "provider_type": "hospital",
+        "location": "Nairobi",
+        "monthly_avg_claims": 40,           
+        "claims_this_month": 47,           
+        "historical_flag_rate": 0.06,       
+        "avg_amount_deviation_pct": 9.5,    
+        "duplicate_claim_count": 1,
+        "risk_tier": "low"
+    },
+    {
+        "provider_id": "PRV002",
+        "provider_name": "Avenue Hospital",
+        "provider_type": "hospital",
+        "location": "Nairobi",
+        "monthly_avg_claims": 35,
+        "claims_this_month": 38,
+        "historical_flag_rate": 0.04,
+        "avg_amount_deviation_pct": 6.2,
+        "duplicate_claim_count": 0,
+        "risk_tier": "low"
+    },
+    {
+        "provider_id": "PRV003",
+        "provider_name": "Westlands Medical Centre",
+        "provider_type": "specialist_clinic",
+        "location": "Nairobi",
+        "monthly_avg_claims": 15,
+        "claims_this_month": 32,            
+        "historical_flag_rate": 0.21,
+        "avg_amount_deviation_pct": 38.7,
+        "duplicate_claim_count": 4,
+        "risk_tier": "high"
+    },
+    {
+        "provider_id": "PRV004",
+        "provider_name": "Mombasa Coast Clinic",
+        "provider_type": "general_clinic",
+        "location": "Mombasa",
+        "monthly_avg_claims": 10,
+        "claims_this_month": 11,
+        "historical_flag_rate": 0.09,
+        "avg_amount_deviation_pct": 12.3,
+        "duplicate_claim_count": 0,
+        "risk_tier": "low"
+    },
+    {
+        "provider_id": "PRV005",
+        "provider_name": "Eastleigh Health Centre",
+        "provider_type": "general_clinic",
+        "location": "Nairobi",
+        "monthly_avg_claims": 8,
+        "claims_this_month": 41,            
+        "historical_flag_rate": 0.45,
+        "avg_amount_deviation_pct": 72.1,
+        "duplicate_claim_count": 9,
+        "risk_tier": "high"
+    }
+]

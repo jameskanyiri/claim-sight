@@ -1,0 +1,211 @@
+[
+  {
+    "claim_id": "20011900",
+    "member_id": "1536500",
+    "provider_id": "PRV002",
+    "provider_name": "Avenue Hospital",
+    "procedure_code": "D2140",
+    "procedure_description": "Fillings Minor",
+    "date_of_service": "2026-01-15",
+    "amount_claimed": 3500,
+    "status": "approved"
+  },
+  {
+    "claim_id": "20011901",
+    "member_id": "1536500",
+    "provider_id": "PRV002",
+    "provider_name": "Avenue Hospital",
+    "procedure_code": "D0220",
+    "procedure_description": "Intra-Oral Xray",
+    "date_of_service": "2026-01-15",
+    "amount_claimed": 800,
+    "status": "approved"
+  },
+  {
+    "claim_id": "20011910",
+    "member_id": "1536500",
+    "provider_id": "PRV001",
+    "provider_name": "Nairobi Lifecare Hospital",
+    "procedure_code": "99213",
+    "procedure_description": "Consultation",
+    "date_of_service": "2026-02-10",
+    "amount_claimed": 1500,
+    "status": "approved"
+  },
+  {
+    "claim_id": "20011920",
+    "member_id": "1538500",
+    "provider_id": "PRV001",
+    "provider_name": "Nairobi Lifecare Hospital",
+    "procedure_code": "85025",
+    "procedure_description": "Haemogram - CBC",
+    "date_of_service": "2026-01-20",
+    "amount_claimed": 1200,
+    "status": "approved"
+  },
+  {
+    "claim_id": "20011921",
+    "member_id": "1538500",
+    "provider_id": "PRV001",
+    "provider_name": "Nairobi Lifecare Hospital",
+    "procedure_code": "99213",
+    "procedure_description": "Consultation",
+    "date_of_service": "2026-02-05",
+    "amount_claimed": 1500,
+    "status": "approved"
+  },
+  {
+    "claim_id": "20011922",
+    "member_id": "1538500",
+    "provider_id": "PRV003",
+    "provider_name": "Westlands Medical Centre",
+    "procedure_code": "87338",
+    "procedure_description": "H Pylori Stool",
+    "date_of_service": "2026-02-12",
+    "amount_claimed": 4200,
+    "status": "flagged"
+  },
+  {
+    "claim_id": "20011923",
+    "member_id": "1538500",
+    "provider_id": "PRV004",
+    "provider_name": "Mombasa Coast Clinic",
+    "procedure_code": "99214",
+    "procedure_description": "Corporate Consultation",
+    "date_of_service": "2026-02-18",
+    "amount_claimed": 1500,
+    "status": "approved"
+  },
+  {
+    "claim_id": "20011930",
+    "member_id": "1536400",
+    "provider_id": "PRV001",
+    "provider_name": "Nairobi Lifecare Hospital",
+    "procedure_code": "99213",
+    "procedure_description": "Consultation",
+    "date_of_service": "2026-01-08",
+    "amount_claimed": 1500,
+    "status": "approved"
+  },
+  {
+    "claim_id": "20011931",
+    "member_id": "1536400",
+    "provider_id": "PRV002",
+    "provider_name": "Avenue Hospital",
+    "procedure_code": "76641",
+    "procedure_description": "Ultrasound Breast",
+    "date_of_service": "2026-01-22",
+    "amount_claimed": 2500,
+    "status": "approved"
+  },
+  {
+    "claim_id": "20011932",
+    "member_id": "1536400",
+    "provider_id": "PRV001",
+    "provider_name": "Nairobi Lifecare Hospital",
+    "procedure_code": "RX001",
+    "procedure_description": "Gaviscon Syrup 200ml",
+    "date_of_service": "2026-02-03",
+    "amount_claimed": 950,
+    "status": "approved"
+  },
+  {
+    "claim_id": "20011933",
+    "member_id": "1536400",
+    "provider_id": "PRV003",
+    "provider_name": "Westlands Medical Centre",
+    "procedure_code": "45378",
+    "procedure_description": "Colonoscopy",
+    "date_of_service": "2026-02-15",
+    "amount_claimed": 42000,
+    "status": "flagged"
+  },
+  {
+    "claim_id": "20011940",
+    "member_id": "1540001",
+    "provider_id": "PRV005",
+    "provider_name": "Eastleigh Health Centre",
+    "procedure_code": "99213",
+    "procedure_description": "Consultation",
+    "date_of_service": "2026-02-01",
+    "amount_claimed": 3000,
+    "status": "flagged"
+  },
+  {
+    "claim_id": "20011941",
+    "member_id": "1540001",
+    "provider_id": "PRV003",
+    "provider_name": "Westlands Medical Centre",
+    "procedure_code": "99213",
+    "procedure_description": "Consultation",
+    "date_of_service": "2026-02-03",
+    "amount_claimed": 2800,
+    "status": "flagged"
+  },
+  {
+    "claim_id": "20011943",
+    "member_id": "1540001",
+    "provider_id": "PRV005",
+    "provider_name": "Eastleigh Health Centre",
+    "procedure_code": "85025",
+    "procedure_description": "Haemogram - CBC",
+    "date_of_service": "2026-02-10",
+    "amount_claimed": 2400,
+    "status": "flagged"
+  },
+  {
+    "claim_id": "20011944",
+    "member_id": "1540001",
+    "provider_id": "PRV004",
+    "provider_name": "Mombasa Coast Clinic",
+    "procedure_code": "RX002",
+    "procedure_description": "E-Some 40mg caps",
+    "date_of_service": "2026-02-15",
+    "amount_claimed": 750,
+    "status": "approved"
+  },
+  {
+    "claim_id": "20011945",
+    "member_id": "1540001",
+    "provider_id": "PRV005",
+    "provider_name": "Eastleigh Health Centre",
+    "procedure_code": "87177",
+    "procedure_description": "Stool for Ova & Cysts",
+    "date_of_service": "2026-02-20",
+    "amount_claimed": 1400,
+    "status": "flagged"
+  },
+  {
+    "claim_id": "20011946",
+    "member_id": "1540001",
+    "provider_id": "PRV003",
+    "provider_name": "Westlands Medical Centre",
+    "procedure_code": "43239",
+    "procedure_description": "Upper GI Endoscopy",
+    "date_of_service": "2026-02-25",
+    "amount_claimed": 38000,
+    "status": "flagged"
+  },
+  {
+    "claim_id": "20011950",
+    "member_id": "1540002",
+    "provider_id": "PRV001",
+    "provider_name": "Nairobi Lifecare Hospital",
+    "procedure_code": "99213",
+    "procedure_description": "Consultation",
+    "date_of_service": "2026-02-08",
+    "amount_claimed": 1500,
+    "status": "approved"
+  },
+  {
+    "claim_id": "20011951",
+    "member_id": "1540002",
+    "provider_id": "PRV001",
+    "provider_name": "Nairobi Lifecare Hospital",
+    "procedure_code": "85025",
+    "procedure_description": "Haemogram - CBC",
+    "date_of_service": "2026-02-08",
+    "amount_claimed": 1200,
+    "status": "approved"
+  }
+]

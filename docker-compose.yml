@@ -1,0 +1,71 @@
+
+version: '3.8'
+
+volumes:
+  langgraph-data:
+    driver: local
+
+services:
+  # --- Backend dependencies ---
+  langgraph-redis:
+    image: redis:6
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 1s
+      retries: 5
+
+  langgraph-postgres:
+    image: postgres:16
+    ports:
+      - "5440:5432"
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - langgraph-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "postgres"]
+      start_period: 10s
+      timeout: 1s
+      retries: 5
+      interval: 5s
+
+  # --- Backend API (LangGraph) ---
+  langgraph-api:
+    build:
+      context: ./claim_sight
+      dockerfile: Dockerfile
+    container_name: claim_sight
+    ports:
+      - "8120:8000"
+    depends_on:
+      langgraph-redis:
+        condition: service_healthy
+      langgraph-postgres:
+        condition: service_healthy
+    environment:
+      REDIS_URI: redis://langgraph-redis:6379
+      POSTGRES_URI: postgres://postgres:postgres@langgraph-postgres:5432/postgres?sslmode=disable
+      DATABASE_URI: postgres://postgres:postgres@langgraph-postgres:5432/postgres?sslmode=disable
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+      LANGSMITH_API_KEY: ${LANGSMITH_API_KEY}
+      LANGSMITH_ENDPOINT: ${LANGSMITH_ENDPOINT}
+      LANGSMITH_TRACING: ${LANGSMITH_TRACING}
+      LANGSMITH_PROJECT: "claim_sight"
+    env_file:
+      - .env
+
+  # --- Frontend (Next.js) ---
+  frontend:
+    build:
+      context: ./clain_sight_ui
+      dockerfile: Dockerfile
+      args:
+        NEXT_PUBLIC_LANGGRAPH_API_URL: http://localhost:8120
+    container_name: claim_sight_ui
+    ports:
+      - "3000:3000"
+    depends_on:
+      - langgraph-api
